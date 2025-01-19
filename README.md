@@ -6,7 +6,7 @@ A super simple tool for a chatbot with voice control
 
 The whole code contains close to no logic in itself, rather it is mostly glue code between:
 
-- ([getUserMedia](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) and [MediaRecorder](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder)) to record the user's audio
+- [getUserMedia](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) and [MediaRecorder](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder) to record the user's audio
 - [OpenAI's Whisper](https://openai.com/index/whisper/) to convert the user audio into a question text
 - [Google's Gemma](https://ai.google.dev/gemma) as an LLM to compute a answer text
 - [Huggingface's Transformers](https://pypi.org/project/huggingface/) python lib to wrap around the LLM, or any model you want to use (just replace the `checkpoint` string)
